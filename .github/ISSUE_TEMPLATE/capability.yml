@@ -1,0 +1,53 @@
+name: Capability proposal
+description: Propose a product, automation, architecture, or delivery capability grounded in a real customer or engineering problem.
+title: "[Capability]: "
+body:
+  - type: textarea
+    id: customer
+    attributes:
+      label: Customer and user
+      description: Who has this problem? Use a segment or role, not confidential customer details.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and current cost
+      description: What recurring problem exists, and how is it handled today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Proposed outcome
+      description: What should become faster, safer, cheaper, more reliable, or more automated?
+    validations:
+      required: true
+  - type: textarea
+    id: differentiation
+    attributes:
+      label: Why Ritru
+      description: Why is this strategically relevant and better than existing alternatives?
+    validations:
+      required: true
+  - type: textarea
+    id: automation
+    attributes:
+      label: AI and automation model
+      description: Which work belongs to humans, AI agents, deterministic tools, policy, approval, and recovery?
+    validations:
+      required: true
+  - type: textarea
+    id: mvp
+    attributes:
+      label: Narrow MVP and success measure
+      description: Define the smallest testable capability and stop criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and constraints
+      description: Include security, data, authority, compliance, integration, support, and commercial risks.
+    validations:
+      required: true

@@ -1,0 +1,46 @@
+name: Architecture decision proposal
+description: Propose a durable technical or repository decision that may require an ADR.
+title: "[Decision]: "
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and forces
+      description: What problem, constraints, scale, security, cost, or organisational forces require a decision?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: Include maintaining the current state where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended decision
+      description: State the decision, applicability, boundaries, and owner.
+    validations:
+      required: true
+  - type: textarea
+    id: ai
+    attributes:
+      label: AI authority and execution
+      description: Where do AI reasoning, deterministic policy, approval, credentials, tools, validation, evidence, and recovery sit?
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences and reversibility
+      description: Describe benefits, costs, migration, lock-in, failure modes, rollback, and deprecation.
+    validations:
+      required: true
+  - type: checkboxes
+    id: adr
+    attributes:
+      label: Decision record
+      options:
+        - label: I checked whether this decision requires a handbook or repository ADR.
+          required: true
