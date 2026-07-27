@@ -15,6 +15,7 @@ Branches should be short-lived and focused. Preferred prefixes are:
 - `chore/`
 - `foundation/`
 - `experiment/`
+- `governance/`
 
 ## Pull requests
 
@@ -27,9 +28,9 @@ The author must not treat an AI-generated review or test summary as independent 
 For active repositories, progressively apply:
 
 - pull requests before merge;
-- required successful CI and policy checks;
+- required successful CI and policy checks where stable checks exist;
 - resolved review conversations;
-- CODEOWNERS review for sensitive areas;
+- team-based CODEOWNERS review for sensitive areas once organisation teams exist;
 - blocked force pushes and branch deletion;
 - restricted direct pushes;
 - secret scanning and push protection where available;
@@ -37,6 +38,8 @@ For active repositories, progressively apply:
 - signed release artefacts and provenance for distributable software.
 
 Do not require a check until it is stable and maintainable. A permanently failing control trains engineers to bypass governance.
+
+Documentation-only repositories do not need custom CI merely to prove that expected files exist. Review, GitHub-native controls, and clear ownership are sufficient until a material automated failure mode is identified.
 
 ## Merge strategy
 

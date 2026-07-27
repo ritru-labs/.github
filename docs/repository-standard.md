@@ -2,7 +2,7 @@
 
 ## Creation gate
 
-Create a repository only when it has one durable responsibility, an accountable owner, a concrete user or consumer, and an independent lifecycle. Do not create repositories for speculative product names or because a technology is fashionable.
+Create a repository only when it has one durable responsibility, an accountable company role, a concrete user or consumer, and an independent lifecycle. Do not create repositories for speculative product names or because a technology is fashionable.
 
 ## Required declaration
 
@@ -10,25 +10,31 @@ Every active repository README must state:
 
 - purpose and primary users;
 - lifecycle status;
-- product and technical ownership;
+- product and technical ownership by role or organisation team;
 - included and excluded scope;
 - architecture or handbook relationship;
-- development and validation commands;
+- development and validation commands where implementation exists;
 - security and data boundaries;
 - release, compatibility, and support model;
 - deprecation and archival expectations.
 
+Public Ritru repositories must follow the [public identity standard](public-identity-standard.md). Do not use personal names or individual account handles as the public ownership model.
+
 ## Required files
 
-- `README.md`
-- `CONTRIBUTING.md`
-- `SECURITY.md`
-- explicit licence or private-use notice
-- `.github/CODEOWNERS`
-- pull-request controls
-- automated validation appropriate to the repository
+Every active repository requires:
 
-Executable repositories additionally require tests, dependency management, release/versioning rules, operational documentation, and rollback or recovery guidance.
+- `README.md`;
+- `CONTRIBUTING.md`;
+- `SECURITY.md`;
+- an explicit licence or private-use notice;
+- pull-request controls, inherited or repository-specific.
+
+Add `CODEOWNERS` when stable organisation teams exist and review routing provides real enforcement. Public `CODEOWNERS` must reference organisation teams rather than individual accounts.
+
+Add automated validation only when it checks executable behaviour, generated artefacts, schemas, security policy, compatibility, or another material failure mode. Do not create custom code merely to confirm that static documentation files exist.
+
+Executable repositories additionally require tests, dependency management, release and versioning rules, operational documentation, and rollback or recovery guidance.
 
 ## AI-enabled repositories
 
