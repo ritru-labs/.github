@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security concern
+    url: https://github.com/ritru-labs/.github/blob/main/SECURITY.md
+    about: Report vulnerabilities and sensitive disclosures privately; do not open a public issue.
